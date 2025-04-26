@@ -21,12 +21,7 @@ Website absensi futuristik dengan tema cyberpunk untuk pencatatan kehadiran sede
    ```bash
    git clone https://github.com/RAMALANHEKING99/website
 
-2.install mudule
+2.install mudule/start
    ```bash
-   npm i 
-
-3.menjalankan server
-```bash
-   npm start
-
+   npm i && npm start
 
