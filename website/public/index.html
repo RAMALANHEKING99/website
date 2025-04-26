@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-ABSEN v2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">SYSTEM BOOTING...</div>
+            <div class="terminal-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="scanline"></div>
+            <div id="boot-text">
+                <p>> INITIALIZING CYBER-ABSEN SYSTEM v2.0...</p>
+                <p>> LOADING NEURAL NETWORKS...</p>
+                <p>> CONNECTING TO MAINFRAME...</p>
+                <p>> SYSTEM READY</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container hidden">
+        <div class="profile-panel">
+            <div class="profile-header">
+                <div class="glitch" data-text="USER_PROFILE">USER_PROFILE</div>
+                <div class="pulse"></div>
+            </div>
+            <div class="profile-content">
+                <img src="assets/profile.jpg" alt="Profile" class="profile-img">
+                <div class="profile-info">
+                    <h3 class="neon-text">ADMINISTRATOR</h3>
+                    <p class="info-line">NAME: <span class="glitch" data-text="JOHN_DOE">JOHN_DOE</span></p>
+                    <p class="info-line">ID: <span>#CYB-2289-42</span></p>
+                    <p class="info-line">STATUS: <span class="active">ACTIVE</span></p>
+                    <p class="info-line">LAST LOGIN: <span>2023-11-15 08:42:15</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <div class="welcome-message">
+                <h1 class="neon-title glitch" data-text="WELCOME_TO_CYBERSPACE">WELCOME_TO_ABSENSI</h1>
+                <p class="typewriter">> SYSTEM READY FOR ABSENSI PROCEDURE</p>
+            </div>
+
+            <div class="absensi-form">
+                <div class="form-header">
+                    <span class="blink">_</span>
+                    <h2>ABSENSI FORM v2.0</h2>
+                    <div class="status-led"></div>
+                </div>
+                <form id="absensiForm">
+                    <div class="input-group">
+                        <label for="nama">IDENTITY:</label>
+                        <input type="text" id="nama" name="nama" required class="cyber-input" placeholder="ENTER_YOUR_NAME">
+                    </div>
+                    <div class="input-group">
+                        <label for="kelas">CLASS:</label>
+                        <input type="text" id="kelas" name="kelas" required class="cyber-input" placeholder="ENTER_YOUR_CLASS">
+                    </div>
+                    <button type="submit" class="cyber-button">
+                        <span class="glitch" data-text="SUBMIT">SUBMIT</span>
+                        <span class="tag">R2</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="absensi-log">
+                <div class="log-header">
+                    <h3>ACCESS LOG</h3>
+                    <button id="refreshLog" class="cyber-button small">
+                        <span class="glitch" data-text="REFRESH">REFRESH</span>
+                    </button>
+                </div>
+                <div class="log-content" id="logContent">
+                    <!-- Log entries will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgAudio" loop>
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-explosion-2759.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
